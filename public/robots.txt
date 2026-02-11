@@ -1,0 +1,19 @@
+# Robots.txt for Navdeep Singh's portfolio
+# Allows all bots to crawl the site
+
+User-agent: *
+Allow: /
+Disallow: /.next/
+Disallow: /node_modules/
+
+# Specific rules for major search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Sitemap reference
+Sitemap: https://navsing.com/sitemap.xml

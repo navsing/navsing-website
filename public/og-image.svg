@@ -1,0 +1,44 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#000000"/>
+  
+  <!-- Decorative gradient background -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1f1f1f;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+  
+  <!-- Main Text -->
+  <text x="600" y="200" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="white" text-anchor="middle">
+    Navdeep Singh
+  </text>
+  
+  <text x="600" y="280" font-family="Arial, sans-serif" font-size="48" fill="#888888" text-anchor="middle">
+    Sr. Manager, Technical PM at Meta
+  </text>
+  
+  <text x="600" y="380" font-family="Arial, sans-serif" font-size="32" fill="#666666" text-anchor="middle">
+    Product Strategy • AI Research • Technical Leadership
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="480" font-family="Arial, sans-serif" font-size="24" fill="#555555" text-anchor="middle">
+    Building AI-native products, researching distributed systems
+  </text>
+  
+  <!-- Stats -->
+  <text x="300" y="570" font-family="Arial, sans-serif" font-size="20" fill="#777777" text-anchor="middle">
+    309 Research Citations
+  </text>
+  
+  <text x="600" y="570" font-family="Arial, sans-serif" font-size="20" fill="#777777" text-anchor="middle">
+    Facebook Creators & Marketplace
+  </text>
+  
+  <text x="900" y="570" font-family="Arial, sans-serif" font-size="20" fill="#777777" text-anchor="middle">
+    Advisor at Firy.ai
+  </text>
+</svg>
