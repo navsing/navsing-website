@@ -202,6 +202,8 @@ export default function Home() {
                 <div className="space-y-2">
                   <div className="text-foreground">Sr. Manager, Technical PMs</div>
                   <div className="text-muted-foreground">@ Meta</div>
+                  <div className="text-foreground">Founder</div>
+                  <div className="text-muted-foreground">@ <a href='https://awardhack.com' target="_blank" className="hover:underline">AwardHack</a></div>
                   <div className="text-xs text-muted-foreground">2021 — Present</div>
                 </div>
               </div>
