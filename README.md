@@ -19,7 +19,7 @@ I operate at the intersection of infrastructure, AI, and product.
 
 ## 🚀 Currently
 
-### Learning AI by building → [AwardHack.com](https://awardhack.com)  
+### Building → [AwardHack.com](https://awardhack.com)  
 100,000+ MAU and growing.
 
 AwardHack helps people maximize credit card points and book award travel intelligently.  

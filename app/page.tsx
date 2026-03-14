@@ -136,6 +136,7 @@ export default function Home() {
           className="group p-3 rounded-lg border border-border hover:border-muted-foreground/50 transition-all duration-300 bg-background/80 backdrop-blur-sm"
           aria-label="Toggle between light and dark theme"
           title="Toggle theme"
+          suppressHydrationWarning
         >
           {isDark ? (
             <svg
@@ -160,8 +161,9 @@ export default function Home() {
           )}
         </button>
       </div>
+
       <nav className="fixed left-8 top-1/2 -translate-y-1/2 z-10 hidden lg:block">
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4" suppressHydrationWarning>
           {["intro", "work", "research", "press", "contact"].map((section) => (
             <button
               key={section}
@@ -203,7 +205,7 @@ export default function Home() {
                   <div className="text-foreground">Sr. Manager, Technical PMs</div>
                   <div className="text-muted-foreground">@ Meta</div>
                   <div className="text-xs text-muted-foreground">2021 — Present</div>
-                  <div className="text-foreground">Founder</div>
+                  <div className="text-foreground">Creator</div>
                   <div className="text-muted-foreground">@ <a href='https://awardhack.com' target="_blank" className="hover:underline">AwardHack</a></div>
                 </div>
               </div>
@@ -229,26 +231,14 @@ export default function Home() {
                 <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4 text-sm text-muted-foreground">
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                    <div className="text-sm text-muted-foreground font-mono tracking-wider">LEARNING AI BY BUILDING {" "}
+                    <div className="text-sm text-muted-foreground font-mono tracking-wider">BUILDING {" "}
                       <a href='https://awardhack.com' target="_blank" className="text-foreground hover:underline">AWARDHACK.COM</a> [100,000 MAU AND GROWING] </div>
                   </div>
                 </div>
                 <div className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4 text-sm text-muted-foreground">
                   <div className="flex items-center gap-2">
-                    {/* <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div> */}
-                    {/* <div className="text-sm text-muted-foreground font-mono tracking-wider">ADVISOR AT {" "}
-                      <a href='https://firy.ai' target="_blank" className="text-foreground hover:underline">FIRY.AI</a> [AI-DRIVEN NEUROLOGICAL CARE]</div> */}
                   </div>
                 </div>
-                {/* <div className="space-y-3 pt-4">
-                  <div className="flex flex-wrap gap-2">
-                    {["iOS", "EB1-A", "AI", "Astronomical Computing", "Data Pipelines"].map((tag) => (
-                      <div key={tag} className="px-3 py-1 border border-border rounded text-xs text-muted-foreground hover:border-foreground transition-colors duration-300">
-                        {tag}
-                      </div>
-                    ))}
-                  </div>
-                </div> */}
               </div>
             </div>
           </div>
@@ -332,7 +322,7 @@ export default function Home() {
                 <h2 className="text-3xl sm:text-4xl font-light">Research Publications</h2>
                 <div className="text-muted-foreground mt-2">309 global citations</div>
                 <div className="text-muted-foreground leading-rela mt-2">
-                  I’ve researched networks meant to survive deep oceans, reimagined what caching looks like if home routers had large storage, and helped design systems that scan the night sky for rare cosmic events in real time. My work lives where distributed systems meet physics, where bandwidth is scarce, latency is brutal, and sometimes the dataset is the universe.
+                  I've researched networks meant to survive deep oceans, reimagined what caching looks like if home routers had large storage, and helped design systems that scan the night sky for rare cosmic events in real time. My work lives where distributed systems meet physics, where bandwidth is scarce, latency is brutal, and sometimes the dataset is the universe.
                 </div>
                 <div className="text-muted-foreground leading-rela mt-2">
                   Read about my research <a className="underline" href="https://scholar.google.com/citations?user=IewhivsAAAAJ&hl=en" target="_blank">here</a>
@@ -350,9 +340,6 @@ export default function Home() {
                 height={800}
               />
             </div>
-
-
-
           </div>
         </section>
 
@@ -381,7 +368,6 @@ export default function Home() {
                     </a>
                   ))}
                 </div>
-
               </div>
 
               <div className="space-y-6">
@@ -415,7 +401,6 @@ export default function Home() {
                 <h2 className="text-3xl sm:text-4xl font-light">{"Talk to me about"}</h2>
                 <p className="text-md sm:text-lg text-muted-foreground leading-relaxed">
                   building AI-native products, optimizing award travel and credit card rewards, navigating technical accomplishments for EB1-A, and applying research at the intersection of AI and real-world systems
-
                 </p>
               </div>
 
